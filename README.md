@@ -66,9 +66,9 @@ Follow these steps to set up this on your local machine:
 ## Screenshots
 Below are the screenshots of the Bio Generator web application:
 
-![Home Page](screenshots\home_page.png)
-![Selected Page](screenshots\selected.png)
-![Generated Bio Page](screenshots\result_page.png)
+![Home Page](screenshots/home_page.png)
+![Selected Page](screenshots/selected.png)
+![Generated Bio Page](screenshots/result_page.png)
 
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository, create a new branch, and submit a pull request with your changes.
