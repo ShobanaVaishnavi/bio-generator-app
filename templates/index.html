@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bio Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Bio Generator</h1>
+
+    <!-- Displaying error messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+            {% for category, message in messages %}
+                <li class="error">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Bio generation form -->
+    <form action="/generate_bio" method="POST">
+        <label for="career">Select Career:</label>
+        <select name="career" id="career">
+            <option value="">--Please Select--</option>  <!-- Placeholder option -->
+            {% for career in careers %}
+            <option value="{{ career }}">{{ career }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="interest">Select Interest:</label>
+        <select name="interest" id="interest">
+            <option value="">--Please Select--</option>  <!-- Placeholder option -->
+            {% for interest in interests %}
+            <option value="{{ interest }}">{{ interest }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="trait">Select Trait:</label>
+        <select name="trait" id="trait">
+            <option value="">--Please Select--</option>  <!-- Placeholder option -->
+            {% for trait in traits %}
+            <option value="{{ trait }}">{{ trait }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Generate Bio</button>
+    </form>
+</body>
+</html>
