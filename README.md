@@ -6,7 +6,7 @@ This is a simple web application built using **Flask** that generates bios based
 
 ### Purpose
 
-This project was created as a learning exercise to practice web development and Flask. Additionally, it is part of an **internship assessment** I received from **WolfPack**, which I worked on to demonstrate my ability to develop a simple, functional web application. The goal was to understand how to create a basic Flask web app with form handling, template rendering, and validations.
+This project was created as a learning exercise to practice the basics of web development and Flask. Additionally, it is part of an **internship assessment** I received from **WolfPack**, which I worked on to demonstrate my ability to develop a simple, functional web application. The goal was to understand how to create a basic Flask web app with form handling, template rendering, and validations.
 
 ## Features
 
