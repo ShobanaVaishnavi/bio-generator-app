@@ -1,5 +1,6 @@
-# Ignore Python bytecode
+# Ignore Python compiled files
 *.pyc
+*.pyo
 __pycache__/
 
 # Ignore environment variables file
@@ -8,3 +9,10 @@ __pycache__/
 # Ignore database files
 *.db
 *.sqlite3
+
+# Ignore Log files
+*.log
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
